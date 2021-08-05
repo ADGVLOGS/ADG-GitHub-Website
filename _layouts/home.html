@@ -49,11 +49,7 @@
         {% endunless %}
       </div>
     </div>
-  </div>
-{% endif %}
-
-{% include footer.html %}
- <script>
+    <script>
  let height;
 
   const sendPostMessage = () => {
@@ -71,3 +67,8 @@
   document.getElementById('add-para').onclick = () => sendPostMessage();
   document.getElementById('remove-para').onclick = () => sendPostMessage();
 </script>
+  </div>
+{% endif %}
+
+{% include footer.html %}
+ 
