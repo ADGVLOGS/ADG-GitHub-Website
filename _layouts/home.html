@@ -57,8 +57,8 @@
  let height;
 
   const sendPostMessage = () => {
-    if (height !== document.getElementById('container').offsetHeight) {
-      height = document.getElementById('container').offsetHeight;
+    if (height !== document.getElementById('container-lg py-6 p-responsive text-center').offsetHeight) {
+      height = document.getElementById('container-lg py-6 p-responsive text-center').offsetHeight;
       window.parent.postMessage({
         frameHeight: height
       }, '*');
