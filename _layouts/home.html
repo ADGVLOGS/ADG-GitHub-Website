@@ -53,7 +53,7 @@
 {% endif %}
 
 {% include footer.html %}
-
+ <script>
  let height;
 
   const sendPostMessage = () => {
@@ -70,4 +70,4 @@
   window.onresize = () => sendPostMessage();
   document.getElementById('add-para').onclick = () => sendPostMessage();
   document.getElementById('remove-para').onclick = () => sendPostMessage();
-
+</script>
